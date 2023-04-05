@@ -112,6 +112,10 @@ img {
 
 }
 
+.insight_container-right .mobile{
+    display: none;
+}
+
 
 
 @media screen and (max-width:1024px) {
@@ -156,6 +160,16 @@ img {
         border-radius: .5rem .5rem 0 0;
 
     }
+
+    .insight_container-right .mobile{
+        display: block;
+    }
+
+    .insight_container-right .desktop{
+        display: none;
+    }
+    
+    
 
     .insight_container-left .cards {
         flex-direction: column;
