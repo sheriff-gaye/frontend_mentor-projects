@@ -22,6 +22,10 @@ body {
     color: var(--color-gray-200);
     overflow-x: hidden;
     background: var(--color-primary);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 p {
@@ -30,13 +34,6 @@ p {
 
 .container {
     width: 60%;
-    margin: 0 auto;
-}
-
-section {
-    max-width: 100vw;
-    max-height: 100vh;
-    padding: 8rem 0 0;
     margin: 0 auto;
 }
 

@@ -25,6 +25,10 @@
 body{
     background: var(--cream);
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 img{
@@ -37,13 +41,12 @@ img{
 .container{
     width: 50%;
     margin: 0 auto;
+    justify-content: center;
+    
     
 }
 
-section{
-    padding: 5rem 0 0;
-    margin: 0 auto;
-}
+
 
 h1{
     font-size: 2rem;
