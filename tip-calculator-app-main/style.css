@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --strong-cyan: hsl(172, 67%, 45%);
+    --dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --color-white: hsl(0, 0%, 100%);
+
+}
+
+body {
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    background: var(--light-grayish-cyan);
+    line-height: 1.5;
+}
+
+
+button {
+
+    display: block;
+    letter-spacing: 1px;
+    width: fit-content;
+    border-radius: .3rem;
+    background: var(--dark-cyan);
+    color: var(--color-white);
+    text-align: center;
+    padding: .6rem 1.7rem;
+    font-weight: 700;
+
+}
+
+button:hover {
+    background: var(--strong-cyan);
+    color: var(--dark-cyan);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.logo {
+    position: absolute;
+    margin: 1rem auto;
+    top: 0;
+}
+
+input {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    background: var(--very-light-grayish-cyan);
+    color: var(--dark-cyan);
+    font-family: 'Space Mono', monospace;
+    padding: 0 1.5rem 0 2.5rem;
+    text-align: right;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+.card_container-left span{
+    pointer-events: none;
+    position:absolute;
+    line-height: 0;
+    padding: 2.3rem 0 0 .5rem;
+    z-index: 1;
+    font-size: .3rem;
+}
+
+input::placeholder {
+    color: var(--dark-grayish-cyan);
+}
+
+input:focus {
+    border: 1px solid var(--strong-cyan);
+    box-shadow: 0 0 0 2px hsl(172, 67%, 90%);
+}
+
+input:invalid{
+    border: 1px solid red;
+    box-shadow: 0 0 0 2px hsl(10, 58%, 63%);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.card_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-radius: 1rem;
+    background: var(--color-white);
+}
+
+
+.card_container-left {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card_container-left label{
+    display: inline-block;
+    color: hsl(183, 100%, 15%);
+    font-size: .8rem;
+    font-weight:0;
+    margin-bottom: 0.3rem;
+}
+
+.card_container-left .percent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+}
+
+.card_container-left .percent input {
+    font-size: .8rem;
+    padding: 0;
+    text-align: center;
+}
+
+
+.card_container-right {
+    margin: 1.7rem;
+    background: var(--dark-cyan);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.card_container-right>div {
+    padding-top: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 4rem;
+}
+
+.card_container-right>div>div {
+    padding-top: .3rem;
+}
+
+.card_container-right>div h1 {
+
+    color: var(--strong-cyan);
+    font-size: 1.8rem;
+}
+
+.card_container-right>div h4 {
+    color: var(--color-white);
+    font-size: .8rem;
+}
+
+
+.card_container-right>div small {
+    color: var(--grayish-cyan);
+}
+
+
+
+.card_container-right button {
+    width: 100%;
+    background: var(--strong-cyan);
+    color: var(--dark-cyan);
+    position: relative;
+    top: calc(50% - 2.3rem);
+    padding: .8rem 1.5rem;
+    font-weight: 700;
+
+}
+
+.card_container-right button:hover {
+    background: hsl(172, 67%, 80%);
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card_container-right button {
+        top: 1rem;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .card_container {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .card_container-left>div {
+        gap: 1.2rem;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .card_container-right>div {
+        gap: 1rem;
+    }
+
+    .card_container-right button {
+        top: .5rem;
+    }
+
+}

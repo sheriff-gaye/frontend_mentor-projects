@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="logo">
+    <img src="./images/logo.svg" alt="">
+  </div>
+
+  <div class="container card_container">
+    <div class="card_container-left">
+      <div>
+        <span>
+          <img src="./images/icon-dollar.svg" />
+
+        </span>
+        <label for="bill">Bill</label>
+
+        <input type="number" name="bill" id="bill" placeholder="0">
+
+      </div>
+
+
+      <div>
+      <label for="">Select Tip %</label>
+      <div class="percent">
+        <button value="5" class="btn">5%</button>
+        <button value="10" class="btn">10%</button>
+        <button value="15" class="btn">15%</button>
+        <button value="25" class="btn">25%</button>
+        <button value="50" class="btn">50%</button>
+        <input type="number" name="" id="" placeholder="Custom" min="1">
+      </div>
+      </div>
+  
+        <div>
+          <span>
+            <img src="./images/icon-person.svg" />
+  
+          </span>
+          <label for="num">Number of People</label>
+          <input type="number" name="num" id="num" placeholder="0">
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <div class="card_container-right">
+      <div>
+        <div>
+          <h4>
+            Tip Amount
+          </h4>
+          <small> / person</small>
+        </div>
+
+        <h1 id="tip_amount">$0.00</h1>
+      </div>
+
+
+      <div>
+        <div>
+          <h4>
+            Total
+          </h4>
+          <small> / person</small>
+        </div>
+        <h1 id="tip_total">$0.00</h1>
+      </div>
+
+
+      <button type="submit" onclick="calculate()">RESET</button>
+    </div>
+  </div>
+
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
