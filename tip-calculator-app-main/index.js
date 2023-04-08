@@ -48,7 +48,7 @@ function calculate() {
 }
 
 bill_amount.addEventListener('input', (e) => {
-    billValue = Number(e.target.value);
+    billValue =parseFloat(e.target.value);
     calculate();
 })
 
@@ -59,7 +59,7 @@ person_num.addEventListener('input', (e) => {
 
 custom.addEventListener('input', (e) => {
     cus = e.target.value;
-    rate = Number(cus) / 100;
+    rate = parseFloat(cus) / 100;
     calculate();
 })
 
