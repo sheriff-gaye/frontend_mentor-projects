@@ -41,7 +41,7 @@
         <button value="15" class="btn">15%</button>
         <button value="25" class="btn">25%</button>
         <button value="50" class="btn">50%</button>
-        <input type="number" name="" id="" placeholder="Custom" min="1">
+        <input type="number" name="custom" id="custom" min="1" max="100" placeholder="Custom" min="1">
       </div>
       </div>
   
@@ -51,7 +51,7 @@
   
           </span>
           <label for="num">Number of People</label>
-          <input type="number" name="num" id="num" placeholder="0">
+          <input type="number" name="num" id="num" min="1" placeholder="0">
         </div>
     </div>
     
@@ -83,7 +83,8 @@
       </div>
 
 
-      <button type="submit" onclick="calculate()">RESET</button>
+      <button type="reset" id="submit">RESET</button>
+ 
     </div>
   </div>
 

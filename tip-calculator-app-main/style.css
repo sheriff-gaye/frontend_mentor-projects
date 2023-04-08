@@ -36,15 +36,19 @@ body {
 button {
 
     display: block;
-    letter-spacing: 1px;
     width: fit-content;
     border-radius: .3rem;
     background: var(--dark-cyan);
     color: var(--color-white);
     text-align: center;
-    padding: .6rem 1.7rem;
+    padding: .7rem 2rem;
     font-weight: 700;
 
+}
+
+.active{
+    background: var(--strong-cyan);
+    color: var(--dark-cyan);
 }
 
 button:hover {
@@ -60,7 +64,7 @@ button:hover {
 
 .logo {
     position: absolute;
-    margin: 1rem auto;
+    margin: 2.7rem auto;
     top: 0;
 }
 
@@ -145,6 +149,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
+
+
 .card_container-right {
     margin: 1.7rem;
     background: var(--dark-cyan);
@@ -166,7 +172,7 @@ input[type=number]::-webkit-outer-spin-button {
 .card_container-right>div h1 {
 
     color: var(--strong-cyan);
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .card_container-right>div h4 {
@@ -187,7 +193,7 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--dark-cyan);
     position: relative;
     top: calc(50% - 2.3rem);
-    padding: .8rem 1.5rem;
+    padding: .7rem 1.7rem;
     font-weight: 700;
 
 }
