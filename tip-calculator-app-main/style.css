@@ -129,9 +129,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .card_container-left label{
     display: inline-block;
-    color: hsl(183, 100%, 15%);
+    color: hsl(183, 100%, 20%);
     font-size: .8rem;
-    font-weight:0;
+    font-weight: normal;
     margin-bottom: 0.3rem;
 }
 
