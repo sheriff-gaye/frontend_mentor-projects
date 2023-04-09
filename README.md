@@ -18,13 +18,16 @@
 <td>Product Card Component</td>
 <td><a href="https://sheriff-gaye.github.io/frontend_mentor-projects/product-preview-card-component-main" >Live Demo</a>
 
-
 <tr>
 <td>3</td>
 <td>Tip Calculator Main</td>
 <td><a href="https://sheriff-gaye.github.io/frontend_mentor-projects/tip-calculator-app-main" >Live Demo</a>
 
+<tr>
+<td>3</td>
+<td>QR Code Component</td>
+<td><a href="https://sheriff-gaye.github.io/frontend_mentor-projects/qr-code-component-main" >Live Demo</a>
+
 </tbody>
 
 </table>
-
