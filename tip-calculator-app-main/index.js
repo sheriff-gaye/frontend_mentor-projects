@@ -13,21 +13,10 @@ let rate = 0;
 buttons.forEach((button) => {
 
     button.addEventListener('click', (e) => {
-
-        button.forEach('click', (item) => {
-            item.classList.add("active");
-
-        })
-        // e.classList.add('active');
-
         rate = (e.target.value) / 100;
         calculate();
 
-
     })
-
-
-
 })
 
 function calculate() {
