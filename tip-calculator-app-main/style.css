@@ -36,7 +36,7 @@ body {
 button {
 
     display: block;
-    width: fit-content;
+    width: 100%;
     border-radius: .3rem;
     background: var(--dark-cyan);
     color: var(--color-white);
@@ -46,7 +46,7 @@ button {
 
 }
 
-.active{
+.active {
     background: var(--strong-cyan);
     color: var(--dark-cyan);
 }
@@ -76,15 +76,16 @@ input {
     background: var(--very-light-grayish-cyan);
     color: var(--dark-cyan);
     font-family: 'Space Mono', monospace;
-    padding: 0 1.5rem 0 2.5rem;
+    padding: .3rem;
     text-align: right;
     border: 1px solid transparent;
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
-.card_container-left span{
+
+.card_container-left span {
     pointer-events: none;
-    position:absolute;
+    position: absolute;
     line-height: 0;
     padding: 2.3rem 0 0 .5rem;
     z-index: 1;
@@ -100,7 +101,7 @@ input:focus {
     box-shadow: 0 0 0 2px hsl(172, 67%, 90%);
 }
 
-input:invalid{
+input:invalid {
     border: 1px solid red;
     box-shadow: 0 0 0 2px hsl(10, 58%, 63%);
 }
@@ -114,7 +115,6 @@ input[type=number]::-webkit-outer-spin-button {
 .card_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
     border-radius: 1rem;
     background: var(--color-white);
 }
@@ -127,7 +127,7 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 2rem;
 }
 
-.card_container-left label{
+.card_container-left label {
     display: inline-block;
     color: hsl(183, 100%, 20%);
     font-size: .8rem;
@@ -135,16 +135,16 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 0.3rem;
 }
 
-.card_container-left .percent {
+.card_container-left div>div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem ;
 }
 
+
+
+
 .card_container-left .percent input {
-    font-size: .8rem;
-    padding: 0;
     text-align: center;
 }
 
@@ -209,30 +209,29 @@ input[type=number]::-webkit-outer-spin-button {
 @media screen and (max-width:1024px) {
 
     .container {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 
-    .card_container-right button {
-        top: 1rem;
-    }
 
 }
 
 @media screen and (max-width:600px) {
-
     .container {
-        width: 100%;
+        width:100%;
         margin: 0 auto;
     }
 
+    .logo{
+        padding-bottom: 5rem;
+    }
+   
     .card_container {
         grid-template-columns: 1fr;
-        margin: 0 auto;
     }
 
-    .card_container-left>div {
-        gap: 1.2rem;
+    .card_container-left>div>div {
+        gap: 1rem 1rem;
         grid-template-columns: repeat(2, 1fr);
 
     }
@@ -244,5 +243,14 @@ input[type=number]::-webkit-outer-spin-button {
     .card_container-right button {
         top: .5rem;
     }
+
+    .card_container-right>div h1{
+        font-size: 1.5rem;
+    }
+
+    .card_container-right>div h4{
+        font-size: .5rem;
+    }
+
 
 }
