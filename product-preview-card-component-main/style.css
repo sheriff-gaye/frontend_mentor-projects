@@ -51,7 +51,7 @@ h1,h2{
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     
    
 }
@@ -66,7 +66,7 @@ h2{
     background: var(--dark-cyan);
     color: var(--white);
     width:100%;
-    padding: .9rem 1rem;
+    padding: .8rem 1rem;
     border-radius: .5rem;
    
 }
@@ -76,7 +76,6 @@ h2{
 .card_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
     background: var(--white);
     border-radius: 1rem;
 }
@@ -91,25 +90,25 @@ h2{
 }
 
 .card_container-right{
-    padding: 2rem 2rem 2rem 2rem;
+    padding:1rem 3rem 1rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    justify-content: space-around;
     position:relative;
 }
     
 .card_container-right small{
     color: var(--dark-grayish);
-    letter-spacing: .3rem;
+    letter-spacing: .4rem;
 }
 
 
 .card_container-right p{
     /* justify-content: flex-start; */
     justify-content: center;
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--dark-grayish);
-    font-size: 1.5rem;
+    font-size: 0.90rem;
   
 }
 
