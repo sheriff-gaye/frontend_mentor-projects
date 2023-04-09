@@ -39,7 +39,7 @@ img{
 }
 
 .container{
-    width: 41%;
+    width: 42%;
     margin: 0 auto;
     justify-content: center;
     
@@ -47,11 +47,11 @@ img{
 
 h1,h2{
     font-family: 'Fraunces', serif;
-    line-height: 1;
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 2.1rem;
+    line-height: 1;
     
    
 }
@@ -90,7 +90,7 @@ h2{
 }
 
 .card_container-right{
-    padding:1rem 2rem 1rem 2rem;
+    padding:1rem 1.7rem 1rem 1.7rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
