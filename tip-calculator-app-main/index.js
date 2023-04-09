@@ -11,12 +11,21 @@ const tip_total = document.getElementById('tip_total');
 let rate = 0;
 
 buttons.forEach((button) => {
-    button.addEventListener('click', (e) => {
-        rate = (e.target.value) / 100;
-        button.classList.remove('active');
 
+    button.addEventListener('click', (e) => {
+
+        button.forEach('click', (item) => {
+            item.classList.add("active");
+
+        })
+        // e.classList.add('active');
+
+        rate = (e.target.value) / 100;
         calculate();
+
+
     })
+
 
 
 })
@@ -48,7 +57,7 @@ function calculate() {
 }
 
 bill_amount.addEventListener('input', (e) => {
-    billValue =parseFloat(e.target.value);
+    billValue = parseFloat(e.target.value);
     calculate();
 })
 
