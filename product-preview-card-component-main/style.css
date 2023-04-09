@@ -121,8 +121,9 @@ h2{
 
 }
 
-.card_container-right > div h5{
-    padding-top:.35rem;
+.card_container-right > div h3{
+    padding-top:.40rem;
+    font-size: .80rem;
     color: var(--dark-grayish);
     text-decoration: line-through;
     
