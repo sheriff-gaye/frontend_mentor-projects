@@ -22,6 +22,7 @@ buttons.forEach((button) => {
 function calculate() {
 
     if ((billValue && numValue && rate) > 0) {
+        disable_btn();
         tip = (billValue * rate);
         tip_plus = billValue + tip;
         result_person = (tip_plus / numValue);
@@ -63,6 +64,7 @@ custom.addEventListener('input', (e) => {
 
 btn.addEventListener('click', () => {
 
+
     billValue.value = 0;
     bill_amount.value = ""
 
@@ -76,3 +78,9 @@ btn.addEventListener('click', () => {
     tip_total.innerHTML = `$` + (0.00.toFixed(2));
 
 })
+
+function disable_btn() {
+    if ((billValue || numValue || rate).value.length>1) {
+        btn.style.background = " hsl(183, 100%, 15%)"
+    }
+}

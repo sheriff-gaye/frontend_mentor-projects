@@ -21,7 +21,8 @@
     --color-white: hsl(0, 0%, 100%);
 
 }
-h1,h2{
+
+h1, h2 {
     font-family: 'Space Mono', monospace;
 }
 
@@ -50,8 +51,8 @@ button {
 
 }
 
-.active {
-    background: var(--strong-cyan);
+.unactive {
+    background: var();
     color: var(--dark-cyan);
 }
 
@@ -61,7 +62,7 @@ button:hover {
 }
 
 .container {
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
 
 }
@@ -142,7 +143,7 @@ input[type=number]::-webkit-outer-spin-button {
 .card_container-left div>div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem ;
+    gap: 1rem;
 }
 
 
@@ -174,12 +175,12 @@ input[type=number]::-webkit-outer-spin-button {
 .card_container-right>div h1 {
 
     color: var(--strong-cyan);
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .card_container-right>div h2 {
     color: var(--color-white);
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 
@@ -191,7 +192,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .card_container-right button {
     width: 100%;
-    background: var(--strong-cyan);
+    background: hsl(183, 100%, 85%);
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.25;
     color: var(--dark-cyan);
     position: relative;
     top: calc(50% - 2.3rem);
@@ -220,14 +224,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media screen and (max-width:600px) {
     .container {
-        width:100%;
+        width: 100%;
         margin: 0 auto;
     }
 
-    .logo{
+    .logo {
         padding-bottom: 5rem;
     }
-   
+
     .card_container {
         grid-template-columns: 1fr;
     }
@@ -246,11 +250,11 @@ input[type=number]::-webkit-outer-spin-button {
         top: .5rem;
     }
 
-    .card_container-right>div h1{
+    .card_container-right>div h1 {
         font-size: 1.5rem;
     }
 
-    .card_container-right>div h4{
+    .card_container-right>div h4 {
         font-size: .5rem;
     }
 

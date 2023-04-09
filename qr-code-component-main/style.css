@@ -34,7 +34,7 @@ img {
 }
 
 
-.container {
+main {
     width: 23%;
     margin: 0 auto;
 }
@@ -71,7 +71,7 @@ img {
 }
 
 @media screen and (max-width:1024px) {
-    .container {
+    main {
         width: 50%;
     }
 
@@ -89,7 +89,7 @@ img {
 
 
 @media screen and (max-width:600px) {
-    .container {
+    main {
         width: 85%;
     }
 
