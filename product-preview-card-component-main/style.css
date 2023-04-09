@@ -39,7 +39,7 @@ img{
 }
 
 .container{
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     justify-content: center;
     
@@ -51,13 +51,13 @@ h1,h2{
 }
 
 h1{
-    font-size: 2.3rem;
+    font-size: 1.6rem;
     
    
 }
 
 h2{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--dark-cyan);
 }
 
@@ -66,7 +66,7 @@ h2{
     background: var(--dark-cyan);
     color: var(--white);
     width:100%;
-    padding: .8rem 1rem;
+    padding: .7rem .9rem;
     border-radius: .5rem;
    
 }
@@ -90,7 +90,7 @@ h2{
 }
 
 .card_container-right{
-    padding:1rem 3rem 1rem 2rem;
+    padding:1rem 2rem 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -108,7 +108,7 @@ h2{
     justify-content: center;
     line-height: 1.7;
     color: var(--dark-grayish);
-    font-size: 0.90rem;
+    font-size: 0.80rem;
   
 }
 
@@ -129,7 +129,7 @@ h2{
 }
 button{
     position: relative;
-    top: calc(10%  -  3rem);
+    top: calc(10%  -  2rem);
     
 }
 
