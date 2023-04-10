@@ -61,15 +61,16 @@ button:hover {
     color: var(--dark-cyan);
 }
 
-.container {
-    width: 70%;
+main {
+    width: 80%;
     margin: 0 auto;
 
 }
 
 .logo {
     position: absolute;
-    margin: 2.7rem auto;
+    justify-content: center;
+    margin:0 auto;
     top: 0;
 }
 
@@ -135,7 +136,7 @@ input[type=number]::-webkit-outer-spin-button {
 .card_container-left label {
     display: inline-block;
     color: hsl(183, 100%, 20%);
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: normal;
     margin-bottom: 0.3rem;
 }
@@ -175,7 +176,7 @@ input[type=number]::-webkit-outer-spin-button {
 .card_container-right>div h1 {
 
     color: var(--strong-cyan);
-    font-size: 2.2rem;
+    font-size: 2.3rem;
 }
 
 .card_container-right>div h2 {
@@ -214,7 +215,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media screen and (max-width:1024px) {
 
-    .container {
+    main {
         width: 90%;
         margin: 0 auto;
     }
@@ -223,7 +224,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media screen and (max-width:600px) {
-    .container {
+    main {
         width: 100%;
         margin: 0 auto;
     }
