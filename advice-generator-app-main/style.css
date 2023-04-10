@@ -34,7 +34,7 @@ body {
 
 
 main {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -65,7 +65,8 @@ h3{
 
 p{
     color: var(--light-cyan);
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
 }
 button{
     margin: 0 auto -60px;
