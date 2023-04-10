@@ -34,7 +34,7 @@ body {
 
 
 main {
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -43,7 +43,7 @@ main {
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     padding: 2rem;
     justify-content: space-around;
     text-align: center;
@@ -83,7 +83,7 @@ button:hover {
 @media screen and (max-width:1024px) {
 
    main{
-    width: 60%;
+    width: 70%;
    }
 }
 
