@@ -62,15 +62,18 @@ button:hover {
 }
 
 main {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
 
 }
 
 .logo {
     position: absolute;
-    justify-content: center;
-    margin:0 auto;
+    margin:1rem auto;
     top: 0;
 }
 
@@ -86,14 +89,14 @@ input {
     text-align: right;
     border: 1px solid transparent;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .card_container-left span {
     pointer-events: none;
     position: absolute;
     line-height: 0;
-    padding: 2.3rem 0 0 .5rem;
+    padding: 2.6rem 0 0 .5rem;
     z-index: 1;
     font-size: .3rem;
 }
@@ -193,10 +196,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .card_container-right button {
     width: 100%;
-    background: hsl(183, 100%, 85%);
-    pointer-events: none;
-    cursor: not-allowed;
-    opacity: 0.25;
+    background:var(--strong-cyan);
     color: var(--dark-cyan);
     position: relative;
     top: calc(50% - 2.3rem);

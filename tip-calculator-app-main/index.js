@@ -22,7 +22,6 @@ buttons.forEach((button) => {
 function calculate() {
 
     if ((billValue && numValue && rate) > 0) {
-        disable_btn();
         tip = (billValue * rate);
         tip_plus = billValue + tip;
         result_person = (tip_plus / numValue);
@@ -79,8 +78,3 @@ btn.addEventListener('click', () => {
 
 })
 
-function disable_btn() {
-    if ((billValue || numValue || rate).value.length>1) {
-        btn.style.background = " hsl(183, 100%, 15%)"
-    }
-}
