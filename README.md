@@ -28,6 +28,12 @@
 <td>QR Code Component</td>
 <td><a href="https://sheriff-gaye.github.io/frontend_mentor-projects/qr-code-component-main" >Live Demo</a>
 
+
+<tr>
+<td>3</td>
+<td>Advice Generator App</td>
+<td><a href="https://sheriff-gaye.github.io/frontend_mentor-projects/advice-generator-app-main" >Live Demo</a>
+
 </tbody>
 
 </table>
