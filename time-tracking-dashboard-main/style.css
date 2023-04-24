@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --blue:hsl(246, 80%, 60%);
+
+    --work:hsl(15, 100%, 70%);
+    --play:hsl(195, 74%, 62%);
+    --study:hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social:hsl(264, 64%, 52%);
+    --care:hsl(43, 84%, 65%);
+
+
+    --very-dark-blue:hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --bale-blue:hsl(236, 100%, 87%);
+
+
+    --transition:400ms all ease;
+
+}
+
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.dashboard_left{
+    background: var(--dark-blue);
+    border-radius: 1rem;
+   
+
+}
+
+.left_top{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--blue);
+    border-radius: 1rem;
+    padding: 1.7rem;
+    
+}
+
+
+.avatar{
+    width: 5rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+
+}
+
+small , h3{
+    color: white;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+.dashboard_left .btns{
+    display: flex;
+    flex-direction: column;
+    place-items: flex-start;
+    gap: 1rem;
+    padding: 1.7rem;
+
+}
+
+.btns button{
+    background: none;
+    color: white;
+}
+.btns button:hover{
+    opacity:.5;
+}
+
+.dashboard_left p :hover{
+    color: var(--bale-blue);
+}

@@ -67,13 +67,13 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    background: var(--light-gray);
+    background: var(--off-white);
 }
 
 main {
     width: 50%;
     margin: 0 auto;
-    border-radius: 1rem 1rem 9rem 1rem;
+    border-radius: 1rem 1rem 7rem 1rem;
     background: var(--white);
     overflow: hidden;
 }
@@ -175,9 +175,7 @@ button:hover{
 }
 
 .results{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* gap: 0; */
+   
     padding:0 10rem 3rem 2rem;
 }
 
@@ -190,4 +188,43 @@ button:hover{
 
 .results span{
     color: var(--purple);
+}
+
+@media screen and (max-width:1024px) {
+
+    main{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+
+    main{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .results{
+        padding: 2rem;
+    }
+    .results h1{
+        font-size: 3rem;
+    }
+
+    form .inputs{
+        padding: 2rem;
+        gap: 1.5rem;
+
+    }
+    .end{
+        padding: 2rem;
+    }
+
+    button{
+        margin-left: -50%;
+        
+    }
+    
 }
