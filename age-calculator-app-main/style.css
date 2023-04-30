@@ -96,14 +96,27 @@ label {
 
 input {
     border: 1px solid var(--light-gray);
-    padding: .20rem;
+    padding: .30rem;
     border-radius: .3rem;
     display: block;
     width: 100%;
     font-weight: 700;
     color: var(--off-black);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 
+}
+
+.error{
+    font-style: italic;
+    color: var(--light-red);
+    font-size: .73rem;
+    display: none;
+}
+.error_label{
+    color: var(--light-red);
+}
+.empty{
+    border-color:var(--light-red) ;
 }
 
 input:focus {
@@ -128,7 +141,7 @@ input::placeholder {
 form .inputs {
     display: flex;
     flex-direction: row;
-    gap: .5rem;
+    gap: 1rem;
     padding: 2rem 10rem 0 2rem;
 
 }
