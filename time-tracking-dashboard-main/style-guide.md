@@ -40,7 +40,7 @@ The designs were created to the following widths:
 
 
 
-  <!-- Work
+  <!-- Work -->
   5hrs <!-- daily -->
   Previous - 7hrs <!-- daily -->
   32hrs <!-- weekly -->
